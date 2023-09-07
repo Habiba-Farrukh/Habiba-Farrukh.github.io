@@ -47,6 +47,9 @@ footer {
   font-size: .65rem; 
 }
 
+#students {
+  color: #0064a4
+}
 
 @media screen and (max-width: 480px) {
   body {
