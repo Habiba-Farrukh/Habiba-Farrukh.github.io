@@ -46,7 +46,47 @@
   color: var(--b-link);
 }
 
+/* For medium screens, e.g., tablets */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Slightly smaller sidebar */
+  }
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+/* For small screens, e.g., large phones */
 @media screen and (max-width: 480px) {
+  .sidebar {
+    width: 150px; /* Even smaller sidebar */
+  }
+  .main-content {
+    margin-left: 150px;
+  }
+}
+
+/* For extra small screens, e.g., small phones */
+@media screen and (max-width: 375px) {
+  .sidebar {
+    width: 100px; /* Minimal sidebar width */
+  }
+  .main-content {
+    margin-left: 100px;
+  }
+}
+
+/* For very small screens or when you want the sidebar to disappear */
+@media screen and (max-width: 320px) {
+  .sidebar {
+    width: 0; /* Sidebar is hidden */
+  }
+  .main-content {
+    margin-left: 0; /* Content takes full width */
+  }
+}
+
+/* @media screen and (max-width: 480px) {
   .sidebar {
     width: 0px;
   }
@@ -66,3 +106,4 @@
   }  
 }
 
+ */
