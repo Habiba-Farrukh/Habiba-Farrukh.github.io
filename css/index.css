@@ -76,7 +76,7 @@ footer {
 }
 
 .large {
-  flex: 0 0 70;
+  flex: 0 0 70%;
 }
 
 .column.small {
