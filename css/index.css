@@ -124,10 +124,17 @@ footer {
     float: right; 
   }
 
-  header h1, nav ul li a {
+  header nav ul li a {
         font-size: smaller; /* Adjust font size for smaller screens */
   }
 
+  header nav ul {
+    display: block;
+  }
+  header nav ul li {
+      display: inline-block; /* Display nav items inline for smaller screens */
+  }
+  
   footer { 
     font-size: .6rem; 
   }
@@ -155,8 +162,15 @@ footer {
     float: right; 
   }
 
-  header h1, nav ul li a {
+  header nav ul li a {
         font-size: smaller; /* Adjust font size for smaller screens */
+  }
+
+  header nav ul {
+    display: block;
+  }
+  header nav ul li {
+      display: inline-block; /* Display nav items inline for smaller screens */
   }
 
   nav ul li::before {
