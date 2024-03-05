@@ -119,6 +119,11 @@ footer {
     font-size: .9rem; 
   }  
 
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
   header img { 
     width: 3.5rem; 
     float: right; 
@@ -126,10 +131,13 @@ footer {
 
   header nav ul {
     display: inline-block;
+    padding-top: 20px; /* Add some space between the title and nav */
+    justify-content: center; /* Center-align the nav items */
   }
   header nav ul li {
       display: inline-block; /* Display nav items inline for smaller screens */
       margin-left: 0; /* Adjusts margin for consistency */
+      text-align: center;
   }
 
   header nav ul li a {
@@ -161,17 +169,25 @@ footer {
     font-size: .65rem; 
   }  
 
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
   header img { 
-    width: 3rem; 
+    width: 3.5rem; 
     float: right; 
   }
 
   header nav ul {
     display: inline-block;
+    padding-top: 20px; /* Add some space between the title and nav */
+    justify-content: center; /* Center-align the nav items */
   }
   header nav ul li {
       display: inline-block; /* Display nav items inline for smaller screens */
       margin-left: 0; /* Adjusts margin for consistency */
+      text-align: center;
   }
 
   header nav ul li a {
