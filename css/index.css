@@ -124,15 +124,18 @@ footer {
     float: right; 
   }
 
-  header nav ul li a {
-        font-size: smaller; /* Adjust font size for smaller screens */
-  }
-
   header nav ul {
     display: block;
   }
   header nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
+      display: block; /* Display nav items inline for smaller screens */
+      margin-left: 0; /* Adjusts margin for consistency */
+  }
+
+  header nav ul li a {
+    display: block; /* Makes the link fill the li for larger click areas */
+    padding: 10px; /* Larger touch target */
+    font-size: 1em; /* Adjusts font size for readability */
   }
   
   footer { 
@@ -148,7 +151,13 @@ footer {
   }
 
   nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
+      display: block; /* Display nav items inline for smaller screens */
+  }
+
+  .img { 
+    width: auto; /* Adjust for a more flexible image size */
+    max-width: 50%; /* Prevents the image from becoming too large */
+    float: none; /* Consider removing float for better alignment */
   }
 }
 
@@ -162,15 +171,18 @@ footer {
     float: right; 
   }
 
-  header nav ul li a {
-        font-size: smaller; /* Adjust font size for smaller screens */
-  }
-
   header nav ul {
     display: block;
   }
   header nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
+      display: block; /* Display nav items inline for smaller screens */
+      margin-left: 0; /* Adjusts margin for consistency */
+  }
+
+  header nav ul li a {
+    display: block; /* Makes the link fill the li for larger click areas */
+    padding: 10px; /* Larger touch target */
+    font-size: 1em; /* Adjusts font size for readability */
   }
 
   nav ul li::before {
@@ -193,6 +205,12 @@ footer {
 
   nav ul li {
       display: inline-block; /* Display nav items inline for smaller screens */
+  }
+
+  .img { 
+    width: auto; /* Adjust for a more flexible image size */
+    max-width: 50%; /* Prevents the image from becoming too large */
+    float: none; /* Consider removing float for better alignment */
   }
 }
 
