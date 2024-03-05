@@ -121,7 +121,7 @@ footer {
 
   header {
     flex-direction: column;
-    align-items: center;
+/*     align-items: center; */
   }
 
   header img { 
@@ -143,7 +143,7 @@ footer {
   header nav ul li a {
     display: inline-block; /* Makes the link fill the li for larger click areas */
 /*     padding: 10px; /* Larger touch target */ */
-    font-size: 1em; /* Adjusts font size for readability */
+    font-size: 0.7em; /* Adjusts font size for readability */
   }
   
   footer { 
@@ -171,8 +171,8 @@ footer {
 
   header {
     flex-direction: column;
-    align-items: center;
-  }
+/*     align-items: center;
+  } */
 
   header img { 
     width: 3.5rem; 
@@ -193,7 +193,7 @@ footer {
   header nav ul li a {
     display: inline-block; /* Makes the link fill the li for larger click areas */
 /*     padding: 10px; /* Larger touch target */ */
-    font-size: 1em; /* Adjusts font size for readability */
+    font-size: 0.7em; /* Adjusts font size for readability */
   }
 
   nav ul li::before {
