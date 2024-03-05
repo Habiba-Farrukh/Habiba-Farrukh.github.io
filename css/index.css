@@ -142,7 +142,7 @@ footer {
 
   header nav ul li a {
     display: inline-block; /* Makes the link fill the li for larger click areas */
-    padding: 10px; /* Larger touch target */
+/*     padding: 10px; /* Larger touch target */ */
     font-size: 1em; /* Adjusts font size for readability */
   }
   
@@ -192,7 +192,7 @@ footer {
 
   header nav ul li a {
     display: inline-block; /* Makes the link fill the li for larger click areas */
-    padding: 10px; /* Larger touch target */
+/*     padding: 10px; /* Larger touch target */ */
     font-size: 1em; /* Adjusts font size for readability */
   }
 
