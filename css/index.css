@@ -114,7 +114,6 @@ footer {
   display: block;
 }
 
-
 @media screen and (max-width: 480px) {
   body {
     font-size: .9rem; 
@@ -127,6 +126,18 @@ footer {
 
   footer { 
     font-size: .6rem; 
+  }
+
+  .column.small, .column.large {
+    width: 100%; /* Stack columns vertically on smaller screens */
+  }
+
+  nav ul {
+    display: block; /* Adjust navigation for vertical layout */
+  }
+
+  nav ul li {
+      display: inline-block; /* Display nav items inline for smaller screens */
   }
 }
 
@@ -149,5 +160,19 @@ footer {
   footer { 
     font-size: .45rem; 
   }
+
+  .column.small, .column.large {
+    width: 100%; /* Stack columns vertically on smaller screens */
+  }
+
+  nav ul {
+    display: block; /* Adjust navigation for vertical layout */
+  }
+
+  nav ul li {
+      display: inline-block; /* Display nav items inline for smaller screens */
+  }
 }
+
+
 
