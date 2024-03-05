@@ -124,6 +124,10 @@ footer {
     float: right; 
   }
 
+  header h1, nav ul li a {
+        font-size: smaller; /* Adjust font size for smaller screens */
+  }
+
   footer { 
     font-size: .6rem; 
   }
@@ -149,6 +153,10 @@ footer {
   header img { 
     width: 3rem; 
     float: right; 
+  }
+
+  header h1, nav ul li a {
+        font-size: smaller; /* Adjust font size for smaller screens */
   }
 
   nav ul li::before {
