@@ -1,18 +1,34 @@
 @import "light.min.css";
-@import "sidebar.css";
+/*@import "sidebar.css";*/
 
 header {
   border-bottom: 1px solid #ddd;
-}
-
-header img { 
-  width: 7rem; 
-  float: right; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 header + p { 
   clear: both; 
   margin-top: 2rem; 
+}
+
+header nav ul {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Displays the list items inline */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+header nav ul li {
+  margin-left: 20px; /* Adds space between the navigation items */
+  margin-top: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none; /* Optional: Removes the underline from links */
+/*  color: inherit; /* Optional: Inherits the text color from the parent elements */*/
 }
 
 nav ul {
@@ -45,6 +61,57 @@ footer {
   margin-top: 2rem; 
   margin-bottom: 2rem; 
   font-size: .65rem; 
+}
+
+.container {
+  display: flex;
+}
+
+.column {
+  padding: 10px; /* Adds some spacing inside the columns */
+}
+
+.small {
+  flex: 0 0 30%;
+}
+
+.large {
+  flex: 0 0 70;
+}
+
+.column.small {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.small p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.column.large p {
+  text-align: justify;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.25rem;
+  margin-top: 0;
+}
+
+
+.social-icons a {
+  font-size: 24px;
+  color: var(--b-link);
+}
+
+.img { 
+/*  width: 7rem; */
+  float: left;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* This ensures the image's aspect ratio is maintained */ 
+  display: block;
 }
 
 
