@@ -125,15 +125,15 @@ footer {
   }
 
   header nav ul {
-    display: block;
+    display: inline-block;
   }
   header nav ul li {
-      display: block; /* Display nav items inline for smaller screens */
+      display: inline-block; /* Display nav items inline for smaller screens */
       margin-left: 0; /* Adjusts margin for consistency */
   }
 
   header nav ul li a {
-    display: block; /* Makes the link fill the li for larger click areas */
+    display: inline-block; /* Makes the link fill the li for larger click areas */
     padding: 10px; /* Larger touch target */
     font-size: 1em; /* Adjusts font size for readability */
   }
@@ -154,11 +154,6 @@ footer {
       display: block; /* Display nav items inline for smaller screens */
   }
 
-  .img { 
-    width: auto; /* Adjust for a more flexible image size */
-    max-width: 50%; /* Prevents the image from becoming too large */
-    float: none; /* Consider removing float for better alignment */
-  }
 }
 
 @media screen and (max-width: 375px) {
@@ -172,15 +167,15 @@ footer {
   }
 
   header nav ul {
-    display: block;
+    display: inline-block;
   }
   header nav ul li {
-      display: block; /* Display nav items inline for smaller screens */
+      display: inline-block; /* Display nav items inline for smaller screens */
       margin-left: 0; /* Adjusts margin for consistency */
   }
 
   header nav ul li a {
-    display: block; /* Makes the link fill the li for larger click areas */
+    display: inline-block; /* Makes the link fill the li for larger click areas */
     padding: 10px; /* Larger touch target */
     font-size: 1em; /* Adjusts font size for readability */
   }
@@ -207,11 +202,6 @@ footer {
       display: inline-block; /* Display nav items inline for smaller screens */
   }
 
-  .img { 
-    width: auto; /* Adjust for a more flexible image size */
-    max-width: 50%; /* Prevents the image from becoming too large */
-    float: none; /* Consider removing float for better alignment */
-  }
 }
 
 
