@@ -108,7 +108,7 @@ footer {
 .img { 
 /*  width: 7rem; */
   float: left;
-  max-width: 90%;
+  max-width: 95%;
   max-height: 90%;
   object-fit: contain; /* This ensures the image's aspect ratio is maintained */ 
   display: block;
