@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- (c) 2025 Habiba Farrukh -->
 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>CS190: Introduction to Security and Privacy</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    table,td { vertical-align: top; margin-left: 0; padding-left: 0; padding-bottom:2pt; }
+    h3 { margin-top: 15px; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1><a href="index.html">CS190: Introduction to Security and Privacy</a></h1>
+    <h2>Spring 2024</h2>
+    <p><a class="current" target="_top" href="index.html">Overview</a></p>  
+  </div>
+  <div id="main">
+
+    <table>
+      <tbody>
+        <tr>
+          <td><b>Instructor:</b></td>
+          <td><a href="https://habiba-farrukh.github.io"><strong>Habiba Farrukh</strong></a><br>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Credits:</b></td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td><b>Lectures:</b></td>
+          <td>MW 9:30 - 10:50 AM, MSTB 120<br>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Class space:</b></td>
+          <td> <a href=""><strong>Canvas</strong></a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Office hours: </strong> <br>
+          </td>
+          <td>By appointment</td>
+        </tr>
+      </tbody>
+    </table>
+    
+<h2>Course Description</h2>
+
+    <p>This course is an introductory course in security and privacy that teaches the security mindset and introduces the principles and practices of computer security as applied to software, host systems, and networks. It covers the foundations of building, using, and managing secure computing platforms. Topics include standard security principles, threats, and defenses for real-world systems, including software and hardware security, web, mobile, and IoT security, and more. See the schedule for details. This course is designed to be an introductory precursor for other undergraduate security courses.</p>
+
+    
+
+<!--     <h2>Tentative Topic List<br>
+    </h2>
+
+    <p>The tentative list of topics that will be discussed in the class is given below. See the <a href="#schedule">schedule</a> for additional details. Please
+      get in touch with the instructor if you have any questions or suggestions.
+    </p>
+
+    <ul>
+      <li> Mobile and IoT security and privacy</li>
+      <li> XR security and privacy</li>
+      <li> Multi-platform security and privacy threats</li>
+      <li> Authentication and access control</li>
+      <li> Sensor-based threats</li>
+      <li> Generative AI-based threats and solutions</li>
+    </ul> -->
+
+
+    <h2>Grading</h2>
+
+    The grade will be based on the following:
+
+    <ul>
+      <li>Homeworks - 20%</li>
+      <li>Programming assignments - 40%</li>
+      <li>Active class participation - 5%</li>
+      <li>Final exam - 35%</li>
+    </ul>
+
+    <h3 id="schedule">Schedule</h3>
+
+    <p>
+      The tentative list of topics and schedule is given below. The topics and the weeks in which they are presented might change in the future. Please check back here frequently.
+    </p>
+
+
+    <table class="tg">
+      <colgroup>
+      <col style="width: 106px">
+      <col style="width: 132px">
+      <col style="width: 392px">
+      <col style="width: 197px">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="tg-mqa1"><b>Week</b></th>
+          <th class="tg-mqa1"><b>Date</b></th>
+          <th class="tg-mqa1"><b>Topics &amp; Readings</b></th>
+          <th class="tg-mqa1"><b>Deadlines</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-b9bt" rowspan="2"><b>Week 1</b></td>
+          <td class="tg-aa13">04/01/2024</td>
+          <td class="tg-aa13">Course Introduction</td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-aa13">04/03/2024</td>
+          <td class="tg-aa13">Intro to Security and Privacy of Emerging Platforms</td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-51oy" rowspan="2"><b>Week 2</b></td>
+          <td class="tg-pury">04/08/2024</td>
+          <td class="tg-pury"><a href="https://www.usenix.org/system/files/sec19-reardon.pdf">50 Ways to Leak Your Data: An Exploration of Apps' Circumvention of the Android Permissions System</a></td>
+          <!-- <td class="tg-pury"><a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s194_paper.pdf">AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot Learning for Mobile Platforms</a></td> -->
+          <td class="tg-pury"></td>
+        </tr>
+        <tr>
+          <td class="tg-jbyd">04/10/2024</td>
+          <td class="tg-jbyd"><span style="font-weight:400;font-style:normal"><a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f77_paper.pdf">StealthyIMU: Stealing Permission-protected Private Information From Smartphone Voice Assistant Using Zero-Permission Sensors</a></span></td>
+          <td class="tg-jbyd"></td>
+        </tr>
+        <tr>
+          <td class="tg-b9bt" rowspan="2"><b>Week 3</b></td>
+          <td class="tg-aa13">04/15/2024</td>
+          <td class="tg-aa13"><a href="https://dl.acm.org/doi/pdf/10.1145/3576915.3616655">The Danger of Minimum Exposures: Understanding Cross-App Information Leaks on iOS through Multi-Side-Channel Learning</a></td>
+          <!-- <td class="tg-aa13"><a href="https://www.ndss-symposium.org/wp-content/uploads/2022-166-paper.pdf">Uncovering Cross-Context Inconsistent Access Control Enforcement in Android</a></td> -->
+          <td class="tg-deadline-grey"><a href="https://canvas.eee.uci.edu/courses/62960/assignments">Homework 1 Due</a></td>
+        </tr>
+        <tr>
+          <td class="tg-aa13">04/17/2024</td>
+          <td class="tg-aa13"><a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_s194_paper.pdf">AuthentiSense: A Scalable Behavioral Biometrics Authentication Scheme using Few-Shot Learning for Mobile Platforms</a></td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-51oy" rowspan="2"><b>Week 4</b></td>
+          <td class="tg-pury">04/22/2024</td>
+          <td class="tg-pury"><a href="https://dl.acm.org/doi/pdf/10.1145/3460120.3484592">Who's In Control? On Security Risks of Disjointed IoT Device Management Channels</a></td>
+          <!-- <td class="tg-pury"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8418641">Do You Feel What I Hear? Enabling Autonomous IoT Device Pairing Using Different Sensor Types</a></td> -->
+          <td class="tg-pury"></td>
+        </tr>
+        <tr>
+          <td class="tg-jbyd">04/24/2024</td>
+          <td class="tg-jbyd"><b><a href="https://canvas.eee.uci.edu/courses/62960/assignments">Project Proposal Presentations</a></b></td>
+          <td class="tg-jbyd"></td>
+        </tr>
+        <tr>
+          <td class="tg-b9bt" rowspan="2"><b>Week 5</b></td>
+          <td class="tg-aa13">04/29/2024</td>
+          <td class="tg-aa13"><a href="https://www.usenix.org/system/files/usenixsecurity23-emami-naeini.pdf">Are Consumers Willing to Pay for Security and Privacy of IoT Devices?</a></td>
+          <td class="tg-deadline-grey"><a href="https://canvas.eee.uci.edu/courses/62960/assignments">Project Proposals Due</a></td>
+
+        </tr>
+        <tr>
+          <td class="tg-aa13">05/01/2024</td>
+          <td class="tg-aa13"><a href="https://www.usenix.org/system/files/sec24summer-prepub-11-cheng-kaiming.pdf">When the User Is Inside the User Interface: An Empirical Study of UI Security Properties in Augmented Reality</a></td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-51oy" rowspan="2"><b>Week 6</b></td>
+          <td class="tg-pury">05/06/2024</td>
+          <td class="tg-pury"><a href="https://www.usenix.org/system/files/usenixsecurity23-zhang-yicheng.pdf">It’s all in your head(set): Side-channel attacks on AR/VR systems</a></td>
+        </tr>
+<!--         <tr>
+          <td class="tg-jbyd">05/08/2024</td>
+          <td class="tg-jbyd"><a href="https://www.usenix.org/system/files/usenixsecurity23-cheng-kaiming.pdf">Exploring User Reactions and Mental Models Towards Perceptual Manipulation Attacks in Mixed Reality</a></td>
+          <td class="tg-jbyd"></td>
+        </tr> -->
+        <tr>
+          <td class="tg-jbyd">05/08/2024</td>
+          <td class="tg-jbyd">No class</td>
+          <td class="tg-jbyd"></td>
+        </tr>
+        <tr>
+          <td class="tg-b9bt" rowspan="2"><b>Week 7</b></td>
+          <td class="tg-aa13">05/13/2024</td>
+          <td class="tg-aa13"><a href="https://www.ndss-symposium.org/wp-content/uploads/2023/02/ndss2023_f298_paper.pdf">SoundLock: A Novel User Authentication Scheme for VR Devices Using Auditory-Pupillary Response</a></td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-aa13">05/15/2024</td>
+          <td class="tg-aa13"><a href="https://www.usenix.org/system/files/usenixsecurity23-appendix-nair-identification.pdf">Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data</a></td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-51oy" rowspan="2"><b>Week 8</b></td>
+          <td class="tg-pury">05/20/2024</td>
+          <td class="tg-pury">Work on course project</td>
+          <td class="tg-deadline-white"></td>
+          <!-- Homework 2 Due -->
+        </tr>
+        <tr>
+          <td class="tg-jbyd">05/22/2024</td>
+          <td class="tg-jbyd"><span style="font-weight:400;font-style:normal"><a href="https://www.computer.org/csdl/proceedings-article/sp/2024/313000a123/1Ub23wEASRO">SneakyPrompt: Jailbreaking Text-to-image Generative Models</a></span></td>
+<!--           <td class="tg-jbyd"><span style="font-weight:400;font-style:normal"><a href="https://dl.acm.org/doi/pdf/10.1145/3576915.3623189">Evading Watermark based Detection of AI-Generated Content</a></span></td> -->
+          <td class="tg-jbyd"></td>
+        </tr>
+        <tr>
+          <td class="tg-b9bt" rowspan="2"><b>Week 9</b></td>
+          <td class="tg-aa13">05/27/2024</td>
+          <td class="tg-aa13">Memorial Day - No Class</td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-aa13">05/29/2024</td>
+          <td class="tg-aa13">Students' Choice</td>
+          <td class="tg-aa13"></td>
+        </tr>
+        <tr>
+          <td class="tg-51oy" rowspan="2"><b>Week 10</b></td>
+          <td class="tg-pury">06/03/2024</td>
+          <td class="tg-51oy" rowspan="2">Project Presentations</td>
+          <td class="tg-51oy"></td>
+        </tr>
+        <tr>
+          <td class="tg-pury">06/05/2024</td>
+          <td class="tg-51oy"></td>
+        </tr>
+        <tr>
+          <td class="tg-b9bt"><b>Week 11</b></td>
+          <td class="tg-deadline-grey" colspan="3"><b><a href="https://canvas.eee.uci.edu/courses/62960/assignments">Project Final Reports Due</a></b></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br style="clear: both;">
+    
+    <h3>Academic Integrity</h3>
+
+    <p>Learning, research, and scholarship depend upon an environment of academic integrity and honesty. This environment can be maintained only when all participants recognize the importance of upholding the highest ethical standards. All student work, including quizzes, exams, reports, and papers, must be the work of the individual receiving credit. Academic dishonesty includes, for example, cheating on examinations or any assignment, plagiarism of any kind (including improper citation of sources), having someone else take an examination or complete an assignment for you (or doing this for someone else), or any activity in which you represent someone else’s work as your own. Violations of academic integrity will be referred to the Office of Academic Integrity and Student Conduct. The impact on your grade will be determined by the individual instructor’s policies. Please familiarize yourself with <a href="https://aisc.uci.edu/policies/academic-integrity/index.php">UCI’s Academic Integrity Policy</a> and speak to the instructor if you have any questions about what is and is not allowed in this course.</p>
+
+    <br style="clear: both;">
+    
+    <h3>Ethics Statement</h3>
+
+    <p>This course considers topics involving personal and public privacy and security. As part of this class, we will cover technologies whose abuse may infringe on the rights of others. As an instructor, I rely on the ethical use of these technologies. Unethical use may include circumvention of existing security or privacy measurements for any purpose or the dissemination, promotion, or exploitation of vulnerabilities of these services. Exceptions to these guidelines may occur in the process of reporting vulnerabilities through public and authoritative channels. Any activity outside the letter and spirit of these guidelines will be reported to the proper authorities and may result in dismissal from the class and expulsion from the university.</p> 
+    
+    <p>When in doubt, please contact the instructor for advice. Do not undertake any action that could be perceived as technology misuse anywhere and/or under any circumstances unless you have received explicit permission from the instructor.</p>
+
+
+
+    <br style="clear: both;">
+
+
+  </div>
+
+
+</body>
+</html>
