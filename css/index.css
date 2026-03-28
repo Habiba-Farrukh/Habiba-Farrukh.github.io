@@ -1,41 +1,73 @@
 @import "light.min.css";
-/*@import "sidebar.css";*/
 
-header {
-  border-bottom: 1px solid #ddd;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-header + p { 
-  clear: both; 
-  margin-top: 2rem; 
+/* ── Header / Nav ── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--b-line);
+  position: sticky;
+  top: 0;
+  background: var(--b-bg-1);
+  z-index: 100;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header + p {
+  clear: both;
+  margin-top: 2rem;
 }
 
 header nav ul {
-  list-style: none; /* Removes bullet points */
-  display: flex; /* Displays the list items inline */
-  padding: 0; /* Removes default padding */
-  margin: 0; /* Removes default margin */
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
-  margin-left: 20px; /* Adds space between the navigation items */
-  margin-top: 20px;
+  margin-left: 24px;
+  margin-top: 0;
 }
 
 header nav ul li a {
-  text-decoration: none; /* Optional: Removes the underline from links */
-/*  color: inherit; /* Optional: Inherits the text color from the parent elements */*/
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--b-link);
+  transition: width 0.25s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
 }
 
 nav ul {
   list-style-type: none;
-/*   margin: 0; */
   margin: 1rem;
-  padding: 0; 
+  padding: 0;
   text-align: left;
 }
 
@@ -57,18 +89,33 @@ nav ul li:first-child::before {
   padding: 0;
 }
 
-footer { 
-  margin-top: 2rem; 
-  margin-bottom: 2rem; 
-  font-size: .65rem; 
+/* ── Links ── */
+a {
+  transition: color 0.2s ease;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: .65rem;
+}
+
+/* ── Two-column layout ── */
 .container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .column {
-  padding: 10px; /* Adds some spacing inside the columns */
+  padding: 10px;
 }
 
 .small {
@@ -77,15 +124,19 @@ footer {
 
 .large {
   flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .column.small {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .column.small p {
-  margin-top: 1rem;
+  margin-top: 0.4rem;
   margin-bottom: 0;
 }
 
@@ -93,107 +144,291 @@ footer {
   text-align: justify;
 }
 
+/* ── Profile photo ── */
+.img {
+  max-width: 75%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ── Social icons ── */
 .social-icons {
   display: flex;
   gap: 0.25rem;
+  margin-top: -0.5rem;
+}
+
+.social-icons a {
+  font-size: 22px;
+  color: var(--b-link);
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  color: #004a7c;
+  transform: scale(1.15);
+  text-decoration: none;
+}
+
+/* ── Section headings with accent underline ── */
+h2 {
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid var(--b-link);
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Updates: date badges ── */
+.update-date {
+  display: inline-block;
+  background: var(--b-link);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  margin-right: 0.35rem;
+  vertical-align: middle;
+  letter-spacing: 0.01em;
+}
+
+/* ── Publications list ── */
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--b-line);
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-list li {
+  transition: background-color 0.2s ease;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.pub-list li:hover {
+  background-color: var(--b-bg-2);
+}
+
+/* ── BibTeX toggle ── */
+.bibtex-toggle {
+  display: inline;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bibtex-toggle summary {
+  display: inline;
+  color: var(--b-link);
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 0;
+  font-weight: normal;
+}
+
+.bibtex-toggle summary:hover {
+  text-decoration: underline;
+}
+
+.bibtex-toggle summary:focus {
+  box-shadow: none;
+}
+
+.bibtex-toggle[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+.bibtex-toggle pre {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ── Publication venue ── */
+.pub-venue {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* ── Award badge ── */
+.pub-award {
+  display: inline-block;
+  background: #f5e6c8;
+  color: #8b6914;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 3px;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+  letter-spacing: 0.01em;
+}
+
+/* ── Prospective students callout ── */
+.callout {
+  background: var(--b-bg-2);
+  border-left: 4px solid var(--b-link);
+  padding: 0.9rem 1.2rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.callout p {
+  margin: 0;
+}
+
+/* ── Updates list ── */
+.updates-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.updates-list li {
+  padding: 0.4rem 0;
+}
+
+/* ── Older updates toggle ── */
+.older-updates {
+  background: transparent;
+  border: none;
+  padding: 0;
   margin-top: 0;
 }
 
-
-.social-icons a {
-  font-size: 24px;
+.older-updates summary {
   color: var(--b-link);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.3rem 0;
 }
 
-.img { 
-/*  width: 7rem; */
-  float: left;
-  max-width: 95%;
-  max-height: 90%;
-  object-fit: contain; /* This ensures the image's aspect ratio is maintained */ 
-  display: block;
+.older-updates summary:hover {
+  text-decoration: underline;
 }
 
+.older-updates[open] .updates-list {
+  max-height: 10rem;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.older-updates .updates-list {
+  margin-top: 0.5rem;
+}
+
+/* ── Responsive ── */
 @media screen and (max-width: 480px) {
   body {
-    font-size: .9rem; 
-  }  
+    font-size: .9rem;
+  }
 
   header {
     flex-direction: column;
-/*     align-items: center; */
+    position: static;
   }
 
-  header img { 
-    width: 3.5rem; 
-    float: right; 
+  header img {
+    width: 3.5rem;
+    float: right;
   }
 
   header nav ul {
     display: inline-block;
-    padding-top: 20px; /* Add some space between the title and nav */
-    justify-content: center; /* Center-align the nav items */
+    padding-top: 20px;
+    justify-content: center;
   }
   header nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
-      margin-left: 0; /* Adjusts margin for consistency */
+      display: inline-block;
+      margin-left: 0;
       text-align: center;
   }
 
   header nav ul li a {
-    display: inline-block; /* Makes the link fill the li for larger click areas */
-/*     padding: 10px; /* Larger touch target */ */
-    font-size: 0.7em; /* Adjusts font size for readability */
+    display: inline-block;
+    font-size: 0.7em;
   }
-  
-  footer { 
-    font-size: .6rem; 
+
+  footer {
+    font-size: .6rem;
+  }
+
+  .container {
+    flex-direction: column;
   }
 
   .column.small, .column.large {
-    width: 100%; /* Stack columns vertically on smaller screens */
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .img {
+    max-width: 60%;
+    margin: 0 auto;
   }
 
   nav ul {
-    display: block; /* Adjust navigation for vertical layout */
+    display: block;
   }
 
   nav ul li {
-      display: block; /* Display nav items inline for smaller screens */
+      display: block;
   }
-
 }
 
 @media screen and (max-width: 375px) {
   body {
-    font-size: .65rem; 
-  }  
+    font-size: .65rem;
+  }
 
   header {
     flex-direction: column;
-/*     align-items: center;
-  } */
+  }
 
-  header img { 
-    width: 3.5rem; 
-    float: right; 
+  header img {
+    width: 3.5rem;
+    float: right;
   }
 
   header nav ul {
     display: inline-block;
-    padding-top: 20px; /* Add some space between the title and nav */
-    justify-content: center; /* Center-align the nav items */
+    padding-top: 20px;
+    justify-content: center;
   }
   header nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
-      margin-left: 0; /* Adjusts margin for consistency */
+      display: inline-block;
+      margin-left: 0;
       text-align: center;
   }
 
   header nav ul li a {
-    display: inline-block; /* Makes the link fill the li for larger click areas */
-/*     padding: 10px; /* Larger touch target */ */
-    font-size: 0.7em; /* Adjusts font size for readability */
+    display: inline-block;
+    font-size: 0.7em;
   }
 
   nav ul li::before {
@@ -202,23 +437,24 @@ footer {
     margin-left: .15rem;
   }
 
-  footer { 
-    font-size: .45rem; 
+  footer {
+    font-size: .45rem;
+  }
+
+  .container {
+    flex-direction: column;
   }
 
   .column.small, .column.large {
-    width: 100%; /* Stack columns vertically on smaller screens */
+    flex: 1 1 100%;
+    width: 100%;
   }
 
   nav ul {
-    display: block; /* Adjust navigation for vertical layout */
+    display: block;
   }
 
   nav ul li {
-      display: inline-block; /* Display nav items inline for smaller screens */
+      display: inline-block;
   }
-
 }
-
-
-
