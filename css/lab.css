@@ -1,0 +1,82 @@
+.lab-intro {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lab-intro p {
+  text-align: justify;
+}
+
+/* Research area cards */
+.research-areas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-card {
+  background: var(--b-bg-2);
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+}
+
+.research-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.research-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Member cards */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.member-card {
+  text-align: center;
+}
+
+.member-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.member-card h4 {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+.member-card p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+
+  .member-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
